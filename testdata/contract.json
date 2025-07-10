@@ -1,0 +1,79 @@
+
+{
+  "SA": {
+    "owner_id": "owner_123",
+    "device_id": "device_456",
+    "mac_address": "00:1B:44:11:3A:B7",
+    "contact_type": "email",
+    "type": "sensor",
+    "owner_public_key": "ABC123PUBKEY",
+    "material": {
+      "name": "steel",
+      "description": "stainless steel"
+    },
+    "metric": {
+      "metric_id": "temp01",
+      "physical_quantity": "temperature",
+      "unit": {
+        "symbol": "°C",
+        "name": "Celsius",
+        "SI_equivalent": "kelvin"
+      },
+      "range": {
+        "min_value": -40,
+        "max_value": 85
+      }
+    },
+    "device_public_key": "XYZ789PUBKEY",
+    "device_certificate_id": "cert9876"
+  },
+  "OA": {
+    "body_id": "obj_001",
+    "name": "Soil Sample",
+    "description": "Top layer soil",
+    "location": "Field A - Sector 3",
+    "body_type": {
+      "type": "Ground",
+      "max_depth": 150
+    }
+  },
+  "PA": 1,
+  "EA": {
+    "start_dateTime": "2025-07-04T08:00:00Z",
+    "end_dateTime": "2025-07-04T12:00:00Z",
+    "time_zone": "UTC+0",
+    "limit_distance": 1000,
+    "sampling_rate": "5min",
+    "reference_coordinates": {
+      "latitude": -25.965,
+      "longitude": 32.583
+    }
+  },
+  "Integrity": {
+    "hash_algorithm": "SHA256",
+    "data_hash": ""
+  },
+  "Audit": {
+    "timestamp_created": "2025-07-04T08:01:00Z",
+    "timestamp_updated": "2025-07-04T08:05:00Z",
+    "modified_by": "user_admin"
+  },
+  "Signatures": {
+    "owner_signature": "SIGN_owner_abc123",
+    "device_signature": "SIGN_device_def456"
+  },
+  "Contract": {
+    "contract_id": "contract_0001",
+    "request_id": "request_9999"
+  },
+  "Schema": {
+    "name": "SensorContractSchema",
+    "version": "1.0",
+    "Uri": "https://example.com/schema/sensor_contract_v1"
+  },
+  "Scope": {
+    "region": "Mozambique-South",
+    "environment": "agriculture"
+  },
+  "Purpose": "Monitor soil temperature for crop optimization"
+}
